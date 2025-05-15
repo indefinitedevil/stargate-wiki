@@ -65,7 +65,7 @@ $wgDBpassword = getenv('DB_PASSWORD');
 
 # MySQL specific settings
 $wgDBprefix = "";
-$wgDBssl = true;
+$wgDBssl = getenv('DB_SSL') == 'true';
 
 # MySQL table options to use during installation or update
 $wgDBTableOptions = "ENGINE=InnoDB, DEFAULT CHARSET=binary";
