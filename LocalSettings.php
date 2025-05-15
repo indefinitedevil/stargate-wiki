@@ -57,11 +57,12 @@ $wgEnotifWatchlist = false; # UPO
 $wgEmailAuthentication = true;
 
 ## Database settings
+$url = parse_url(getenv("JAWSDB_URL"));
 $wgDBtype = "mysql";
-$wgDBserver = getenv('DB_HOST');
-$wgDBname = getenv('DB_DATABASE');
-$wgDBuser = getenv('DB_USERNAME');
-$wgDBpassword = getenv('DB_PASSWORD');
+$wgDBserver = $url["host"];
+$wgDBname = substr($url["path"], 1);
+$wgDBuser = $url["user"];
+$wgDBpassword = $url["pass"];
 
 # MySQL specific settings
 $wgDBprefix = "";
