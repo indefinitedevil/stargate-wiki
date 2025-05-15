@@ -47,7 +47,6 @@ sftp-config.json
 /images/tmp
 /maintenance/.mweval_history
 /maintenance/.mwsql_history
-/LocalSettings.php
 /includes/PlatformSettings.php
 
 # Building & testing
@@ -67,7 +66,6 @@ phpunit.xml
 
 # Composer
 /vendor
-/composer.lock
 /composer.local.json
 /composer.phar
 
