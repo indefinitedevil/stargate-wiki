@@ -57,7 +57,7 @@ $wgEnotifWatchlist = false; # UPO
 $wgEmailAuthentication = true;
 
 ## Database settings
-$url = parse_url(getenv("JAWSDB_URL"));
+$url = parse_url(getenv("JAWSDB_MARIA_URL"));
 $wgDBtype = "mysql";
 $wgDBserver = $url["host"];
 $wgDBname = substr($url["path"], 1);
